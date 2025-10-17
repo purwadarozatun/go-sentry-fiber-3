@@ -22,3 +22,5 @@ require (
 	golang.org/x/sys v0.21.0 // indirect
 	golang.org/x/text v0.16.0 // indirect
 )
+
+replace github.com/purwadarozatun/go-sentry-fiber-3 => ./sentrykit

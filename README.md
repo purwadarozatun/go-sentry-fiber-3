@@ -17,11 +17,13 @@ A standalone, reusable Sentry integration package for Go Fiber applications with
 ## Installation
 
 ```bash
-go get github.com/getsentry/sentry-go
-go get github.com/gofiber/fiber/v3
+go get github.com/purwadarozatun/go-sentry-fiber-3@v1.0.0
 ```
 
-Then copy the `sentrykit` folder to your project, or install as a module.
+This module requires:
+- Go 1.21 or higher  
+- Fiber v3.0.0-beta.3 or higher
+- Sentry Go SDK v0.36.0 or higher
 
 ## Quick Start
 
@@ -32,7 +34,7 @@ package main
 
 import (
     "log"
-    "yourapp/sentrykit"
+    sentrykit "github.com/purwadarozatun/go-sentry-fiber-3"
     "github.com/gofiber/fiber/v3"
 )
 

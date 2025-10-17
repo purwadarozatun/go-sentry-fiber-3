@@ -25,7 +25,7 @@ cd /path/to/your-sentrykit-repo
 
 ```bash
 # Initialize with your module path
-go mod init github.com/yourusername/sentrykit
+go mod init github.com/purwadarozatun/go-sentry-fiber-3
 
 # Or for internal use
 go mod init company.com/internal/sentrykit
@@ -40,7 +40,7 @@ go mod tidy
 This will create a `go.mod` file with required dependencies:
 
 ```go
-module github.com/yourusername/sentrykit
+module github.com/purwadarozatun/go-sentry-fiber-3
 
 go 1.21
 
@@ -56,7 +56,7 @@ require (
 git init
 git add .
 git commit -m "Initial commit: SentryKit standalone module"
-git remote add origin https://github.com/yourusername/sentrykit.git
+git remote add origin https://github.com/purwadarozatun/go-sentry-fiber-3.git
 git push -u origin main
 ```
 
@@ -72,11 +72,11 @@ git push origin v1.0.0
 Now you can use SentryKit in any Go project:
 
 ```bash
-go get github.com/yourusername/sentrykit@v1.0.0
+go get github.com/purwadarozatun/go-sentry-fiber-3@v1.0.0
 ```
 
 ```go
-import "github.com/yourusername/sentrykit"
+import "github.com/purwadarozatun/go-sentry-fiber-3"
 
 func main() {
     sentrykit.Init(sentrykit.Config{
@@ -105,7 +105,7 @@ cd sentrykit
 git init
 git add .
 git commit -m "Initial commit"
-git remote add origin https://github.com/yourusername/sentrykit.git
+git remote add origin https://github.com/purwadarozatun/go-sentry-fiber-3.git
 git push -u origin main
 ```
 
@@ -113,10 +113,10 @@ git push -u origin main
 
 ```bash
 # Add as submodule
-git submodule add https://github.com/yourusername/sentrykit.git sentrykit
+git submodule add https://github.com/purwadarozatun/go-sentry-fiber-3.git sentrykit
 
 # Update go.mod to use local path
-go mod edit -replace github.com/yourusername/sentrykit=./sentrykit
+go mod edit -replace github.com/purwadarozatun/go-sentry-fiber-3=./sentrykit
 ```
 
 ## Option 4: Private Go Module (GitLab/GitHub Enterprise)
@@ -222,12 +222,12 @@ git push origin v1.1.0
 2. Tag releases
 3. Users can install with:
    ```bash
-   go get github.com/yourusername/sentrykit@latest
+   go get github.com/purwadarozatun/go-sentry-fiber-3@latest
    ```
 
 ### pkg.go.dev
 
-Once published on GitHub, it will automatically appear on https://pkg.go.dev/github.com/yourusername/sentrykit
+Once published on GitHub, it will automatically appear on https://pkg.go.dev/github.com/purwadarozatun/go-sentry-fiber-3
 
 ## Testing the Standalone Module
 
@@ -254,7 +254,7 @@ package main
 
 import (
     "log"
-    "github.com/yourusername/sentrykit"
+    "github.com/purwadarozatun/go-sentry-fiber-3"
     "github.com/gofiber/fiber/v3"
 )
 
