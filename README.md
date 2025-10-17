@@ -16,8 +16,15 @@ A standalone, reusable Sentry integration package for Go Fiber applications with
 
 ## Installation
 
+For external projects using this module:
 ```bash
 go get github.com/purwadarozatun/go-sentry-fiber-3@v1.0.0
+```
+
+For development within this module:
+```bash
+# No installation needed - you're already in the module
+# Just use: import "github.com/purwadarozatun/go-sentry-fiber-3"
 ```
 
 This module requires:
